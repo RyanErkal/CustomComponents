@@ -4,6 +4,21 @@ import Badge from "./components/Badge";
 import Banner from "./components/Banner";
 import Card from "./components/Card";
 import Testimonial from "./components/Testimonial";
+import Tooltip from "./components/Tooltip";
+
+const colors = [
+	"red",
+	"yellow",
+	"green",
+	"blue",
+	"indigo",
+	"purple",
+	"pink",
+	"gray"
+];
+
+const placeHolderText =
+	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.";
 
 function App() {
 	return (
@@ -12,70 +27,37 @@ function App() {
 
 			{/* Badges */}
 
-			<Badge color="red" />
-			<Badge color="yellow">Badge</Badge>
-			<Badge color="green">Badge</Badge>
-			<Badge color="blue">Badge</Badge>
-			<Badge color="indigo">Badge</Badge>
-			<Badge color="purple">Badge</Badge>
-			<Badge color="pink">Badge</Badge>
+			{colors.map((color) => (
+				<Badge color={color}>Badge</Badge>
+			))}
 			<br />
-			<Badge color="red" rounded />
-			<Badge color="yellow" rounded>
-				Badge
-			</Badge>
-			<Badge color="green" rounded>
-				Badge
-			</Badge>
-			<Badge color="blue" rounded>
-				Badge
-			</Badge>
-			<Badge color="indigo" rounded>
-				Badge
-			</Badge>
-			<Badge color="purple" rounded>
-				Badge
-			</Badge>
-			<Badge color="pink" rounded>
-				Badge
-			</Badge>
+			{colors.map((color) => (
+				<Badge color={color} rounded>
+					Badge
+				</Badge>
+			))}
 
 			{/* Banners */}
 
-			<Banner status="success">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				pariatur, ipsum similique veniam.
-			</Banner>
-			<Banner status="warning">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				pariatur, ipsum similique veniam.
-			</Banner>
-			<Banner status="error">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				pariatur, ipsum similique veniam.
-			</Banner>
+			<Banner status="success">{placeHolderText}</Banner>
+			<Banner status="warning">{placeHolderText}</Banner>
+			<Banner status="error">{placeHolderText}</Banner>
 			<Banner status="default"></Banner>
 
 			{/* Cards */}
 
-			<Card title="Lorem ipsum">
-				Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.
-				Et magna sit morbi lobortis.
-			</Card>
+			<Card title="Lorem ipsum">{placeHolderText}</Card>
 			<Card title="Lorem ipsum" hover>
-				Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.
-				Et magna sit morbi lobortis.
+				{placeHolderText}
 			</Card>
 
 			{/* Testimonial */}
 
 			<Testimonial name="John Doe" title="Amazon CFO">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				pariatur, ipsum similique veniam.
+				{placeHolderText}
 			</Testimonial>
 			<Testimonial name="John Doe" title="Amazon CFO" vertical>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				pariatur, ipsum similique veniam.
+				{placeHolderText}
 			</Testimonial>
 		</div>
 	);
