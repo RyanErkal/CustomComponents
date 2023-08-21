@@ -59,6 +59,14 @@ function App() {
 			<Testimonial name="John Doe" title="Amazon CFO" vertical>
 				{placeHolderText}
 			</Testimonial>
+
+			{/* Tooltip */}
+
+			{colors.map((color) => (
+				<Tooltip color={color} styles="bold" title="Archive Notes">
+					Useful Information
+				</Tooltip>
+			))}
 		</div>
 	);
 }
