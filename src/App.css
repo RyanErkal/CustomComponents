@@ -124,7 +124,6 @@ html {
 	max-width: 800px;
 	padding: 48px 0px;
 	margin: 6px;
-	border: 1px solid red;
 }
 
 .testimonial-vertical {
@@ -133,7 +132,6 @@ html {
 	max-width: 300px;
 	padding-top: 0px;
 	margin: 6px;
-	border: 1px solid red;
 }
 
 .testimonial-text {
