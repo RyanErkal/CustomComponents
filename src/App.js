@@ -73,6 +73,10 @@ function App() {
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
 				pariatur, ipsum similique veniam.
 			</Testimonial>
+			<Testimonial name="John Doe" title="Amazon CFO" vertical>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+				pariatur, ipsum similique veniam.
+			</Testimonial>
 		</div>
 	);
 }

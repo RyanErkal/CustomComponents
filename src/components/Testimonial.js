@@ -6,10 +6,11 @@ export default function Testimonial({
 	img = "default",
 	name,
 	title,
-	children
+	children,
+	vertical = false
 }) {
 	return (
-		<div className="testimonial">
+		<div className={!vertical ? "testimonial" : "testimonial-vertical"}>
 			{img ? (
 				<img
 					className="testimonial-image"

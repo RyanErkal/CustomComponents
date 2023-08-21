@@ -123,6 +123,16 @@ html {
 	display: flex;
 	max-width: 800px;
 	padding: 48px 0px;
+	margin: 6px;
+	border: 1px solid red;
+}
+
+.testimonial-vertical {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	padding-top: 0px;
+	margin: 6px;
 	border: 1px solid red;
 }
 
@@ -134,14 +144,18 @@ html {
 	align-self: center;
 	padding-left: 64px;
 	height: 200px;
-	width: 100%;
+	width: auto;
 	background-color: #2545b8;
+}
+
+.testimonial-vertical > .testimonial-text {
+	padding: 0 16px 0 16px;
+	height: 300px;
 }
 
 .testimonial-text > img {
 	width: 36px;
 	height: 36px;
-	overflow: hidden;
 	scale: 1.25;
 }
 
@@ -150,6 +164,19 @@ html {
 	left: 36px;
 	width: auto;
 	height: 256px;
+	border-radius: 12px;
+	box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-vertical > .testimonial-image {
+	display: flex;
+	position: relative;
+	align-self: center;
+	left: 0px;
+	top: 36px;
+	width: 90%;
+	height: 150px;
+	object-fit: cover;
 	border-radius: 12px;
 	box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
 }
