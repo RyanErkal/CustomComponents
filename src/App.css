@@ -16,8 +16,9 @@ body {
 	left: 0;
 	right: 0;
 	height: 5px;
-	background: #1e40af;
+	background: red;
 	transform-origin: 0%;
+	z-index: 1000;
 }
 
 .section {
