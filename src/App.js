@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Card from "./components/Card";
 import Testimonial from "./components/Testimonial";
 import Tooltip from "./components/Tooltip";
+import Toast from "./components/Toast";
 
 const colors = [
 	"red",
@@ -73,6 +74,13 @@ function App() {
 			<Tooltip color="gray" size="lg" title="Archive Notes">
 				Useful Information
 			</Tooltip>
+
+			{/* Toast */}
+
+			<Toast type="success">You have successfully logged in!</Toast>
+			<Toast type="warning">A network error has been detected</Toast>
+			<Toast type="info">Please read updated information</Toast>
+			<Toast type="error">Error 420</Toast>
 		</div>
 	);
 }
