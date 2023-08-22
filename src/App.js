@@ -44,8 +44,11 @@ function App() {
 
 				<Section title="Banners">
 					<Banner status="success">{placeHolderText}</Banner>
+					<br />
 					<Banner status="warning">{placeHolderText}</Banner>
+					<br />
 					<Banner status="error">{placeHolderText}</Banner>
+					<br />
 					<Banner status="default"></Banner>
 				</Section>
 				{/* Cards */}
@@ -90,12 +93,15 @@ function App() {
 					<Toast type="success">
 						You have successfully logged in!
 					</Toast>
+					<br />
 					<Toast type="warning" position="top-right">
 						A network error has been detected
 					</Toast>
+					<br />
 					<Toast type="info" position="bottom-left">
 						Please read updated information
 					</Toast>
+					<br />
 					<Toast type="error" position="center">
 						Error 420
 					</Toast>
