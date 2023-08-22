@@ -67,6 +67,16 @@ function App() {
 					Useful Information
 				</Tooltip>
 			))}
+
+			<Tooltip color="red" size="sm" title="Archive Notes">
+				Useful Information
+			</Tooltip>
+			<Tooltip color="red" size="md" title="Archive Notes">
+				Useful Information
+			</Tooltip>
+			<Tooltip color="red" size="lg" title="Archive Notes">
+				Useful Information
+			</Tooltip>
 		</div>
 	);
 }

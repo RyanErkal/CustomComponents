@@ -221,3 +221,20 @@ html {
 	top: 6px;
 	right: 6px;
 }
+
+.tooltip-x:hover {
+	cursor: pointer;
+	scale: 1.1;
+}
+
+.tooltip-sm {
+	max-width: 300px;
+}
+
+.tooltip-md {
+	max-width: 500px;
+}
+
+.tooltip-lg {
+	max-width: 800px;
+}

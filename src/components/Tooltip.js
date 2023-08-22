@@ -2,9 +2,16 @@ import React from "react";
 import CloseButton from "./CloseButton";
 import Inbox from "./Inbox";
 
-export default function Tooltip({ color, styles, title, children }) {
+export default function Tooltip({ color, size = "lg", title, children }) {
 	return (
-		<div className={`tooltip ${color}`}>
+		<div
+			className={`tooltip ${color} ${
+				size === "sm"
+					? "tooltip-sm"
+					: size === "md"
+					? "tooltip-md"
+					: "tooltip=lg"
+			}`}>
 			<div className="tooltip-icon">
 				<Inbox stroke={color} />
 			</div>
