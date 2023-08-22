@@ -7,6 +7,7 @@ import Card from "./components/Card";
 import Testimonial from "./components/Testimonial";
 import Tooltip from "./components/Tooltip";
 import Toast from "./components/Toast";
+import { motion, useScroll } from "framer-motion";
 
 const colors = [
 	"red",
@@ -23,8 +24,13 @@ const placeHolderText =
 	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.";
 
 function App() {
+	const { scrollYProgress } = useScroll();
 	return (
 		<div className="App">
+			<motion.div
+				className="progress-bar"
+				style={{ scaleX: scrollYProgress }}
+			/>
 			<Section title="">
 				<h1>Custom Components</h1>
 				{/* Badges */}
