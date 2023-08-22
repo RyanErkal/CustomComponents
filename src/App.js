@@ -106,6 +106,9 @@ function App() {
 						Error 420
 					</Toast>
 				</Section>
+
+				{/* Modal */}
+				<Section title="Modals"></Section>
 			</Section>
 		</div>
 	);
