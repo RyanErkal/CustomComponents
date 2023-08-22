@@ -63,18 +63,14 @@ function App() {
 			{/* Tooltip */}
 
 			{colors.map((color) => (
-				<Tooltip color={color} styles="bold" title="Archive Notes">
+				<Tooltip color={color} size="sm" title="Archive Notes">
 					Useful Information
 				</Tooltip>
 			))}
-
-			<Tooltip color="red" size="sm" title="Archive Notes">
+			<Tooltip color="gray" size="md" title="Archive Notes">
 				Useful Information
 			</Tooltip>
-			<Tooltip color="red" size="md" title="Archive Notes">
-				Useful Information
-			</Tooltip>
-			<Tooltip color="red" size="lg" title="Archive Notes">
+			<Tooltip color="gray" size="lg" title="Archive Notes">
 				Useful Information
 			</Tooltip>
 		</div>
